@@ -11,7 +11,7 @@
 			"file": "git.html",
 			"settings":
 			{
-				"buffer_size": 2128,
+				"buffer_size": 2161,
 				"line_ending": "Unix"
 			}
 		}
@@ -19,9 +19,13 @@
 	"build_system": "Packages/User/Google-Chrome.sublime-build",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
 			[
 				"proj",
 				"Project: Save As"
@@ -79,7 +83,7 @@
 				"Snippet: Lorem ipsum"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -96,6 +100,9 @@
 	},
 	"file_history":
 	[
+		"/Users/Tom/.bash_profile",
+		"/Users/Tom/.bashrc",
+		"/Users/Tom/Dropbox/Programming/DBC/tommchenry.github.io/blog/devbootcamp.sublime-project",
 		"/Users/Tom/Dropbox/Programming/DBC/tommchenry.github.io/blog/js/module.js",
 		"/Users/Tom/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/Tom/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -152,15 +159,15 @@
 					"file": "git.html",
 					"settings":
 					{
-						"buffer_size": 2128,
+						"buffer_size": 2161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1985,
-								1985
+								2160,
+								2160
 							]
 						],
 						"settings":
@@ -260,7 +267,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 514.0,
+						"translation.y": 438.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -318,11 +325,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/Users/Tom/Dropbox/Programming/DBC/tommchenry.github.io/blog/devbootcamp.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
