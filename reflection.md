@@ -6,7 +6,7 @@
 
 ##What did you learn about CSS positioning?
 
->I learned that setting the <footer> to be fixed at the bottom of the window will cut off the bottom of the content of the <main> element because it will attempt to always overlap it. Then I figured out that I could add excess padding for the height of the footer to the bottom of <main> to compensate, and then the page will scroll as I intended and all the content is visible.
+>I learned that setting the `<footer>` to be fixed at the bottom of the window will cut off the bottom of the content of the `<main>` element because it will attempt to always overlap it. Then I figured out that I could add excess padding for the height of the footer to the bottom of `<main>` to compensate, and then the page will scroll as I intended and all the content is visible.
 
 ##What aspects of your design did you find easiest to implement? What was most difficult?
 
