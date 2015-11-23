@@ -87,13 +87,25 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5em;
+  height: 3em;
+  padding: 1em 0 0 3em;
 }
 
 footer p{
   font-size: 0.75em;
   margin: auto;
   width: 20%;
-  padding-top:1em;
   color: #9E6F00;
+}
+
+footer a:link{
+  color:#9E6F00;
+  font-size: 0.75em;
+}
+
+footer a:visited{
+  color:#9E6F00;
+}
+footer a:hover{
+  color: gray;
 }
