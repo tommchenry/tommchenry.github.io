@@ -87,7 +87,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 3em;
+  height: 5em;
   padding: 1em 0 0 3em;
 }
 
@@ -96,6 +96,10 @@ footer p{
   margin: auto;
   width: 20%;
   color: #9E6F00;
+}
+
+footer img{
+  padding-left: 20px;
 }
 
 footer a:link{
