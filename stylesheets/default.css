@@ -82,6 +82,10 @@ header ul{
   vertical-align: top;
 }
 
+main {
+  padding: 0 5% 10% 5%;
+}
+
 footer {
   background-color: #fdb60a;
   position: fixed;
