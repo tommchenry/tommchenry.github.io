@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tom McHenry's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Home</a> | <a href="index.html">Blog</a> | <a href="../projects/index.html">Projects</a> | <a href="#">Resume</a> | <a href="../about.html">About Me</a> | <a href="#">Contact</a>
+    </nav>
+    <header>
+      <h1>Tom McHenry's Blog</h1>
+    </header>
+    <article>
+      <h2>Classes Versus Constructors</h2>
+      <h3>Ruby classes vs. JavaScript constructor functions</h3>
+      <h4>December 6, 2015</h4>
+      <p>In both Ruby and Javascript, once you get beyond a certain point of complexity, you'll probably want the abilty to produce many instances of the same kind of object. Last week I talked about how Ruby classes are a lot like blueprints for a house or the template for a comics page and how having this plan to work off of means that we can make more and more of the same general object instances with new kinds of specific values. Javascript can kind of do the same thing (but not exactly) by using constructor functions.</p>
+      <p>The terminology constructor function is easier to remember than "class" because the name tells you what you can expect the function to do: construct an object. When you write a constructor function, you're telling Javascript how to build that object's default instance. You can then interact with and update individual instances without necessarily updating all the instances of that same object. Again, this is all very much like a class in Ruby.</p>
+      <h4>Syntax</h4>
+      <p>Ruby Class</p>
+      <code>class myObjects<br>
+        &nbsp;&nbsp;def initialize(instance_variable)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;@instance_variable = instance_variable<br>
+        &nbsp;&nbsp;end<br>
+      </code>
+      <p>Javascript Constructor Function</p>
+      <code>function myObjects(instanceVariable){<br>
+        &nbsp;&nbsp;this.instanceVariable = instanceVariable;<br>
+      }<br>
+      </code>
+      <p>Notice the many similarities between these two. After the first line in the Ruby example specifically declares a <code>class</code> of <code>myObjects</code>, the two can be laid next to each other and compared easily. The Ruby <code>def</code> is used to define a method, much how the Javascript <code>function</code> is used to define a function in Javascript. Both are then passed <code>instance_variable</code> as an argument in Ruby or a parameter in Javascript. We then set this value equal to a property that each instance of our object will have. In Ruby we declare a special variable, an instance variable with <code>@instance_variable</code>. In Javascript, we also declare a special kind of variable but the syntax is slightly different: <code>this</code> tells Javascript that this particular value of the property will belong to <em>this</em> particular instance of the object. Imagine telling your constructor function "<code>This</code> time the value of the property will be what's passed in as a parameter.
+      </p>
+      <h4>Differences</h4>
+      <p>
+      Even though I took pains to lay out how classes in Ruby are used to produce objects, weirdly enough, classes are themselves also objects. Because Ruby classes are objects that are so widely used, Ruby provides a whole bunch of built-in methods and properties for these special class objects.
+      </p><p>
+      However, Javascript constructors aren't these robust special objects. They're just functions like other functions, they just happen to produce instances of objects. At our level, the similarities overwhelm the differences, but these Javascript constructor functions wind up being a much more basic version of Ruby classes until you flesh them out with additional properties and methods.
+      </p>
+    </article>
+    <footer>
+<a href="mailto:tommchenry@gmail.com">tommchenry@gmail.com</a> |
+<a href="http://www.twitter.com/tommchenry">@tommchenry</a> |
+<a href="https://www.facebook.com/tommchenry">Facebook</a> |
+<a href="https://www.linkedin.com/in/mchenrytom">LinkedIn</a> |
+<a href="https://github.com/tommchenry">Github</a>
+      <p>Copyright &copy; 2015</p>
+    </footer>
+  </body>
+</html>
