@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+  <head>
+    <title>Ruby Cheat Sheet</title>
+    <link rel="stylesheet" href="../stylesheets/ruby-cheat.css"/>
+  </head>
+  <body>
+    <header>
+            <h1>Ruby Cheat Sheet</h1>
+    </header>
+    <main>
+      <section class="col-1">
+        <h2>Basics</h2>
+        <h3>Variables</h3>
+        <code>
+          integer = 3<br>
+          float = 3.0<br>
+          string = "three"<br>
+        </code>
+        <h3>Arrays</h3>
+        <code>
+          my_array = [1,2,3]
+        </code>
+        <p>or</p>
+        <code>
+          my_array = Array.new(<em>#an integer representing size</em>)
+        </code>
+         <p>or</p>
+        <code>
+          my_array = %w{<em>#a list of strings</em>}
+        </code>
+        <h3>Hashes</h3>
+        <code>my_hash = { "key1" => "value1", "key2" => "value2"}</code>
+        <p>or</p>
+        <code>my_hash = { symbol1: "value1", symbol2: "value2"}</code>
+        <p>or</p>
+        <code>my_hash = Hash.new(<em>#default value</em>)</code>
+        <h3>Methods</h3>
+        <code>
+        def method_name(arguments)<br>
+        &nbsp;&nbsp;<em>#do some stuff</em><br>
+        end<br>
+        </code>
+        <h3>Objects</h3>
+          <code>
+            class My_Object<br>
+            &nbsp;&nbsp;def initialize(variable)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;@variable = variable<br>
+            &nbsp;&nbsp;end<br>
+            end
+          </code>
+        <h3>If-Then</h3>
+        <code>
+        if conditional == true<br>
+          &nbsp;&nbsp;<em>#do something</em><br>
+        elsif other_conditional == true<br>
+         &nbsp;&nbsp;<em>#do something else</em><br>
+        else<br>
+        &nbsp;&nbsp;<em>#do some third thing</em><br>
+        end
+      </code>
+        <h3>Ternary Conditional</h3>
+        <code>
+          test-expression ? if-true-expression : if-false-expression
+        </code>
+        <h3>Case Statements</h3>
+        <code>
+          case some_var<br>
+          when value1<br>
+          &nbsp;&nbsp;<em>#do something</em><br>
+          when value2 <br>
+          &nbsp;&nbsp;<em>#do something else</em><br>
+          else <br>
+          &nbsp;&nbsp;<em>#do some third thing</em><br>
+          end
+        </code>
+        <h2>Loops</h2>
+        <h3>While</h3>
+        <code>
+          while conditional == true do<br>
+             &nbsp;&nbsp;<em>#do something</em><br>
+          end
+        </code>
+        <h3>Until</h3>
+        <code>
+          until conditional == false do<br>
+            &nbsp;&nbsp;<em>#do something</em><br>
+          end
+        </code>
+        <h3>For</h3>
+        <code>
+          for variable in collection do<br>
+            &nbsp;&nbsp;<em>#do something</em><br>
+          end
+        </code>
+      </section>
+      <section class="col-2">
+        <h2>Some Collection Methods</h2>
+        <h3>.include?</h3>
+        <code>
+          my_array.include?("element")
+        </code>
+        <p><em>Returns true if a hash or array includes the element.</em></p>
+        <h3>.find</h3>
+        <code>
+          my_array.find {|n| n == true}
+        </code>
+        <p><em>Returns the first element in the array that returns true on the code block</em></p>
+        <h3>.select, .find_all</h3>
+        <code>
+          my_array.select {|n| n == true}
+        </code>
+        <p><em>Returns an array of all values that match the code block. The reverse is .reject.</em></p>
+        <h3>.group_by</h3>
+        <code>
+          my_array.group_by {|n| n.length}
+        </code>
+        <p><em>Returns a hash. The result will become the key, the value will be an array of each value that matches each value to the resulting key.</em></p>
+        <h3>.partition</h3>
+        <code>
+          my_array.partition {|element| element == true}
+        </code>
+        <p><em>Returns two arrays: a false array and a true array.</em></p>
+        <h3>.sample</h3>
+        <code>my_array.sample(<em>#some number of objects</em>)</code>
+        <p><em>Returns a random sample of n unique objects from the collection.</em></p>
+        <h3>.take, .drop</h3>
+        <code>
+          my_array.take(2)<br>
+          my_array.drop(2)
+        </code>
+        <p><em>Take returns an array of that many. Drop returns collection without that many.</em></p>
+        <h3>.values_at</h3>
+        <code>
+          my_hash.values_at("key1","key2")
+        </code>
+        <p><em>Returns an array at the values at the keys provided as an argument.</em></p>
+        <h2>Each and Relatives</h2>
+        <h3>.each</h3>
+        <code>my_array.each do |element| element.upcase end</code>
+        <p><em>Calls the block of code on each element in the collection.</em></p>
+        <h3>.reverse_each</h3>
+        <code>my_array.reverse_each {|n| puts n * 10}</code>
+        <p><em>Iterates backward through an enumerable collection.</em></p>
+        <h3>.each_with_index</h3>
+        <code>
+          my_array.each_with_index {|element,index| puts "#{index}:#{element}"}
+        </code>
+        <p><em>Provides both the item and its index each time through the code block.</em></p>
+        <h3>.cycle</h3>
+        <code>
+          my_array.cycle(<em>#some number of times</em>) do |element|
+        </code>
+        <p><em>Cycles the object through the code block the number of times you specify.</em></p>
+        <h3>.map, .map!</h3>
+        <code>
+          my_array.map {|element| element.upcase}
+        </code>
+        <p><em>Always returns an array that is always the same size as the original colllection after having called the code block on each item.</em></p>
+      </section>
+    </main>
+    <footer>
+      <p>Written by Tom McHenry 2015</p>
+    </footer>
+  </body>
+</html>
