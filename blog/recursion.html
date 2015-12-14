@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tom McHenry's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Blog</a> | <a href="#">Projects</a> | <a href="#">Resume</a> | <a href="#">About Me</a> | <a href="#">Contact</a>
+    </nav>
+    <header>
+      <h1>Tom McHenry's Blog</h1>
+    </header>
+    <article>
+      <h2>Eating Your Heart Out</h2>
+      <h3>Recursion and You (and Recursion)</h3>
+      <h4>December 13, 2015</h4>
+      <p></p>
+      <h4>Base Case</h4>
+      <p>If now you feel you understand the basics of recursion, stop reading.</p>
+      <h4>Other Cases</h4>
+      <p>
+      Recursion is the snake swallowing its own tail. It's a video camera filming a screen that's displaying the feed from the video camera. It's a story about a dark and stormy night where a vampire tells a story about a dark and stormy night where a vampire tells a story about a dark and stormy night where -- you get the idea.
+      </p><p>
+      See how I had to cut off with that last example, or it could run forever? That's the secret to recursion. Remember when we first learned about while loops and there was the dire warning that you have to have some sort of iterator or break on a while loop or it will run forever?
+      </p>
+      <p><strong>Recursion essentially harnesses the power of infinite loop errors and uses it for good.</strong></p>
+      <p>We do this by having a function call itself inside itself. The method will run and at some point call the method within itself which will then call the method within that version of the method. You're probably thinking, "Won't that break everything?" And it will!</p>
+      <p>The secret of recursion and what keeps it from being an infinite loop is the base case. The base case is the most basic possible return value. If you're recursioning a giant list of numbers, it's probably the zero or one value. The base case of the snake eating its tail is when there's no more snake to eat. The base case of the vampire telling a story about a dark and stormy night is my "--you get the idea" (the point where my patience for retyping the phrase hit zero).</p>
+      <p>The base case is the first thing you'll want to work out. Then you have to work out the rules that apply to all the other cases before the case calls itself again. If this seems confusing, another way to think of it is that some programming languages don't have for loops and rely on recursion to loop. For a virtual for loop, the base case would be when i = 0 and the final value is returned. The other cases would be to perform any steps you want performed, subtract 1 from i and then call the function again inside itself.</p>
+      <p>The most difficult prongs of recusion are that you have to take the kinds of loops you normally consider and invert them and you have to work out the syntax to insure that what you will pass up from the many levels deep will be correct.</p>
+      <p>After you've finished reading this primer on the concept of recursion, <a href="recursion.html">check out this article</a>.</p>
+
+    </article>
+    <footer>
+      <p>Copyright &copy; 2015</p>
+    </footer>
+  </body>
+</html>
