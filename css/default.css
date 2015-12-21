@@ -87,6 +87,36 @@ main {
 
 .home {
   padding: 0 5% 10% 5%;
+  min-height: 400px;
+}
+
+.home a{
+  color: #9E6F00;
+  text-decoration: none;
+}
+
+.post-content {
+  padding: 0 5% 10% 5%;
+}
+
+.post-list a{
+  color: #9E6F00;
+  text-decoration:none;
+  padding-left: 10px;
+}
+
+.post-list{
+  list-style: none;
+}
+
+.post-list > li{
+  margin-bottom: 10px;
+  border-bottom: 1px gray solid;
+  width: 600px;
+}
+
+.right{
+  float: right;
 }
 
 footer {

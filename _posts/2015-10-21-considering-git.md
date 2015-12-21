@@ -1,3 +1,8 @@
+---
+layout: post
+title: Classes Versus Constructors
+---
+
 #Considering Git
 
 ##Week 1 Technical Blog
