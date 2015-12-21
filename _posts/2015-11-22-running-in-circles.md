@@ -15,15 +15,15 @@ title: Running in Circles with .Cycle
 
 For example:
 
-```
+{% highlight ruby %}
 array = [1,2,3,4,5]
 
 array.cycle(2){|element| puts element + 1}
-```
+{% endhighlight %}
 
 will return:
 
-```
+{% highlight ruby %}
 2
 3
 4
@@ -34,7 +34,7 @@ will return:
 4
 5
 6
-```
+{% endhighlight %}
 
 Notice after the 6, the second cycle through the code block begins. Also notice that the second code block also puts 2, 3, 4, 5, 6, not 3,4,5,6,7 as you might expect. .cycle loops through the elements, but does not change them or save the new values created.
 
